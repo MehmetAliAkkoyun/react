@@ -1,16 +1,16 @@
 describe("IT1 - Pizza Sipariş Formu", () => {
-  beforeEach(() => {
- 
-    cy.visit("/");
+ beforeEach(() => {
+  cy.visit("http://localhost:5173/");
+  cy.get('[data-cy="go-order"]').should("be.visible").click();
+});
 
-  
-    cy.contains("ACIKTIM").click();
-  });
+
+
 
   it("inputa bir metin giren test", () => {
     cy.get('input[placeholder="En az 3 karakter"]')
-      .type("Sıla")
-      .should("have.value", "Sıla");
+      .type("Mali")
+      .should("have.value", "Mali");
   });
 
   it("birden fazla malzeme seçilebilen bir test", () => {
@@ -45,7 +45,7 @@ describe("IT1 - Pizza Sipariş Formu", () => {
     }).as("postPizza");
 
     
-    cy.get('input[placeholder="En az 3 karakter"]').type("Sıla");
+    cy.get('input[placeholder="En az 3 karakter"]').type("Mali");
 
     cy.contains(".radioRow", "Orta")
       .find('input[type="radio"]')

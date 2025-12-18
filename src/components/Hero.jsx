@@ -15,9 +15,14 @@ export default function Hero({ onOrderClick }) {
           PİZZA, DOYURUR
         </h2>
 
-        <button type="button" className="hero2__btn" onClick={onOrderClick}>    
-          ACIKTIM
-        </button>
+        <button type="button"
+  className="hero2__btn"
+  data-cy="go-order"
+  onClick={onOrderClick}
+>
+  ACIKTIM
+</button>
+
       </div>
     </header>   
   );
