@@ -1,42 +1,332 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+.hero2{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
+}
+
+.hero2__brand{
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 7rem;
+  
+}
+
+.hero2__content{
+  margin-top: 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
+
+.hero2__headline{
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 86px;
+  line-height: 1.05;
+  letter-spacing: 2px;
+}
+
+.hero2__btn{
+  width: 180px;
+  height: 52px;
+  border: none;
+  border-radius: 26px;
+  background: #FDC913;
+  color: #292929;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Barlow";
+  font-size: 18px;
+}
+
+
+.orderPage{
+  background:#fff;
+  min-height:100vh;
+}
+
+
+.orderPage .orderTopbar{
+  background:#CE2829;
+  padding:36px 16px 22px;
+  text-align:center;
+}
+.orderPage .orderBrand{
+  margin:0;
+  color:#fff;
+  font-family:"Londrina Solid";
+  font-size:34px;
+  font-weight:400;
+  margin-bottom: 1rem;
+}
+.orderPage .orderCrumb{
+  margin:10px 0 0;
+  color:#fff;
+  font-size:12px;
+  opacity:.95;
+  font-family: "Barlow";
+  margin-right: 24rem;
+}
+
+
+.orderPage .orderWrap{
+  display:flex;
+  justify-content:center;
+  padding:34px 16px 70px;
+}
+.orderPage .orderCard{
+  width:532px;
+  max-width:100%;
+}
+
+
+.orderPage .pizzaTitle{
+  text-align:center;
+  font-family:"Barlow";
+  font-size:16px;
+  margin:18px 0 18px;
+  color:#292929;
+  font-weight:600;
+  margin-right: 21.5rem
+}
+.orderPage .pizzaMeta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:0 0 10px;
+}
+.orderPage .pizzaPrice{
+  font-size:20px;
+  font-weight:700;
+  color:#292929;
+  font-family: "Barlow";
+}
+.orderPage .pizzaRate{
+  display:flex;
+  font-size:11px;
+  color:#5F5F5F;
+  gap: 4rem;
+  font-family: "Barlow";
+  font-weight: 400;
+}
+.orderPage .pizzaDesc{
+  font-size:14px;
+  line-height:1.75;
+  color:#5F5F5F;
+  margin:10px 0 28px;
+  font-family: "Barlow";
+  font-weight: 400;
+}
+
+
+.orderPage .fieldLabel{
+  display:block;
+  font-size:20px;
+  font-weight:600;
+  color:#292929;
+  margin-top: 1.5rem;
+  font-family: "Barlow";
+  margin-bottom: 0.4rem;
+}
+.orderPage .req{ color:#CE2829; }
+
+.orderPage .textInput,
+.orderPage .noteInput{
+  width:100%;
+  height:38px;
+  border:1px solid #E5E7EB;
+  border-radius:4px;
+  padding:0 12px;
+  font-size:12px;
+  outline:none;
+}
+.orderPage .fieldError{
+  margin:8px 0 0;
+  font-size:12px;
+  color:#CE2829;
+}
+
+
+.orderPage .twoCols{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  margin:8px 0 26px;
+}
+.orderPage .secTitle{
+  font-size:20px;
+  margin-top: 1.5rem;
+  font-weight:600;
+  color:#292929;
+  font-family: "Barlow";
+  margin-bottom: 0.4rem;
+}
+.orderPage .radioRow{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:11px;
+  color:#5F5F5F;
+  margin:10px 0;
+}
+.orderPage .selectInput{
+  width:130px;
+  height:24px;
+  border:1px solid #D1D5DB;
+  border-radius:2px;
+  font-size:11px;
+  padding:0 6px;
+  outline:none;
+}
+
+
+.orderPage .secHelp{
+  margin:0 0 16px;
+  font-size:10px;
+  color:#5F5F5F;
+  font-family: "Barlow";
+  font-weight: 500;
+}
+.orderPage .toppingsGrid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:10px 40px;
+  margin-bottom:10px;
+  font-family: "Barlow";
+  font-weight: 700;
+}
+.orderPage .checkRow{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:11px;
+  color:#292929;
+}
+.orderPage .checkRow.isDisabled{ opacity:.5; }
+
+
+.orderPage .splitLine{
+  border:none;
+  border-top:1px solid #E5E7EB;
+  margin:22px 0;
+}
+
+
+.orderPage .bottomRow{
+  display:grid;
+  grid-template-columns:170px 1fr;
+  gap:24px;
+  align-items:start;
+}
+.orderPage .qtyBox{ display:flex; align-items:center; }
+.orderPage .qtyBtn{
+  width:46px;
+  height:46px;
+  border:none;
+  background:#FDC913;
+  font-weight:800;
+  cursor:pointer;
+}
+.orderPage .qtyValue{
+  width:46px;
+  height:46px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #E5E7EB;
+  font-weight:700;
+  font-size:12px;
+  background:#fff;
+}
+
+.orderPage .summaryCard{
+  border:1px solid #E5E7EB;
+  border-radius:3px;
+  padding:18px 18px 14px;
+  background:#fff;
+  margin-bottom:12px;
+}
+.orderPage .summaryTitle{
+  margin:0 0 14px;
+  font-size:16px;
+  font-weight:600;
+  color:#292929;
+  font-family: "Barlow";
+}
+.orderPage .sumLine{
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+  color:#5F5F5F;
+  margin:10px 0;
+  font-family: "Barlow";
+}
+.orderPage .sumTotal{
+  font-weight:800;
+  color:#CE2829;
+  font-family: "Barlow";
+  font-size: 14px;
+}
+.orderPage .orderBtn{
+  width:100%;
+  height:46px;
+  background:#FDC913;
+  border:none;
+  border-radius:3px;
+  font-weight:900;
+  letter-spacing:.5px;
+  cursor:pointer;
+}
+.orderPage .orderBtn:disabled{ opacity:.5; cursor:not-allowed; }
+
+
+@media (max-width:640px){
+  .orderPage .twoCols{ grid-template-columns:1fr; gap:18px; }
+  .orderPage .toppingsGrid{ grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px 18px; }
+  .orderPage .bottomRow{ grid-template-columns:1fr; }
+  .orderPage .selectInput{ width:100%; height:38px; border-radius:4px; }
+}
+
+.successPage{
+  min-height: 100vh;
+  background: #CE2829;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.successBrand{
+  color:#fff;
+  font-family:"Londrina Solid";
+  font-size: 50px;
+  font-weight:400;
+  margin-top: 5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.successText{
+  margin: 180px 0 0;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 86px;
+  line-height: 92px;
+  letter-spacing: 1.5px;
+  margin-top: 18rem;
 }
