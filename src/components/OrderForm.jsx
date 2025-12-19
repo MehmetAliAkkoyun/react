@@ -20,7 +20,7 @@ const TOPPINGS = [
   "Kanada Jambonu",
   "Domates",
   "Jalepeno",
-  "Sucuk",
+  "Salam",
 ];
 
 const OrderForm = forwardRef(function OrderForm({ onSuccess }, ref) {
